@@ -3,12 +3,12 @@ import org.junit.*;
 
   public class PlayerTest {
     Player player;
-    Player second_player;
+    Player secondPlayer;
 
     @Before
     public void before() {
-      player = new Player("Charlie");
-      second_player = new Player("Zuzana");
+      player = new Player("Charlie", 14);
+      secondPlayer = new Player("Zuzana", 11);
     }
 
     @Test
@@ -17,7 +17,13 @@ import org.junit.*;
     }
 
     @Test
-    public void hasNameSecondPlayer() {
-      assertEquals("Zuzana", second_player.getName());
+    public void hasValue() {
+      assertEquals(11, secondPlayer.getCardValue());
     }
+
+    @Test
+    public void hasNameSecondPlayer() {
+      assertEquals("Zuzana", secondPlayer.getName());
+    }
+
    }
