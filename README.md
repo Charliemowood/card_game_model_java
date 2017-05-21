@@ -1,4 +1,4 @@
-This a simple model of a card game.
+This is a simple model of a card game.
 
 The codebase makes use of the Junit Test Framework. 
 
